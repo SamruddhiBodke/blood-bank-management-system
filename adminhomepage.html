@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin home page</title>
+<style>
+*
+{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+body
+{
+	background-size:cover;
+	background-position: center;
+
+	font-family:sans-serif;
+	background-image:url(1234.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+}
+.menu-bar
+{
+	
+	background: rgb(0,0,0,0.3);
+	text-align: center;
+	height: 60px;	
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	font-color: #fff;
+	margin: 0em 0em 0 0;
+}
+
+.menu-bar ul li
+{
+	display: inline-flex;
+	margin: 0 0em;
+}
+.menu-bar ul li a{
+	box-sizing: border-box;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+	width: 120px;
+	margin:20px;
+
+}
+.menu-bar ul li a:hover {
+	background: #fff;
+	color: #333;
+}
+
+.welcome-text {
+	position: absolute;
+	left: 350px;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: right;
+}
+.welcome-text h1 {
+	text-align: right;
+	color: black;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.welcome-text h1 span {
+	color: black;
+}
+
+.dropdown {
+        position:relative;
+	box-sizing: border-box;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top:20px;
+        min-width: 100px;
+        display:inline-block;
+        
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgb(0,0,0,0.3);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index:1;
+}
+
+.dropdown-content a {
+   color: black;
+  text-decoration: none;
+  display:block;
+   
+  
+}
+
+.dropdown-content a:hover {
+	background-color: black;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+  margin:10px;
+  
+
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+
+</style>   
+</head>
+<body>
+<div class="menu-bar">
+<ul>
+	<li class="active"><a href="index.html">Home</a></li>
+	<li>
+          <div class="dropdown"><a>Records</a>
+           <div class="dropdown-content">
+            <a href="pdetails.jsp">Patient Details</a>
+         <a href="dprofile.jsp">Donor Details</a>
+           </div>
+          </div>
+          </li> 
+	<li>
+          <div class="dropdown"><a>stocks</a>
+           <div class="dropdown-content">
+            <a href="bloodstock.jsp">blood</a>
+           
+           </div>
+          </div>
+          </li>
+          <li><a href="feedbacks.html">Feedbacks</a></li>  
+      <li><a href="arequirement.jsp">Requirements</a></li>    
+	<li><a href="logout.jsp">Logout</a></li>
+</ul>
+</div>
+<div class="welcome-text">
+        <h1>welcome to 
+<span>Admin Profile</span></h1>
+    </div>
+</body>
+</html>
